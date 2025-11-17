@@ -56,7 +56,7 @@ public class ModMain implements ClientModInitializer {
 
         try {
             String ts = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
-            File dir = new File(System.getProperty("user.home") + "/.minecraft/ochre_recordings/" + ts);
+            File dir = new File(System.getProperty("user.home") + "/.minecraft/action-recordings/" + ts);
             dir.mkdirs();
 
             writer = new FileWriter(new File(dir, "actions.jsonl"), true);
